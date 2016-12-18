@@ -13,7 +13,7 @@ public class Quicksort {
 	
 	/**
 	 * \brief Metodo de ordenacion por Quick.
-	 * @param values
+	 * @param values - Array de enteros
 	 */
 	public void sort(int[] values) {
 		// Check for empty or null array
@@ -27,8 +27,8 @@ public class Quicksort {
 	
 	/**
 	 * \brief Metodo recursivo QuickSort.
-	 * \param low
-	 * \param high
+	 * \param low - Extremo izquierda de subparte a ordenar.
+	 * \param high - Extremo derecho de subparte a ordenar.
 	 */
 	private void quicksort(int low, int high) {
 		int i = low, j = high;
@@ -82,8 +82,8 @@ public class Quicksort {
 	
 	/**
 	 * \brief Metodo pivote.
-	 * \param i
-	 * \param j
+	 * \param i - Indice i de array.
+	 * \param j - Indice j de array.
 	 */
 	private void exchange(int i, int j) {
 		int temp = numbers[i];
@@ -93,7 +93,7 @@ public class Quicksort {
 	
 	/**
 	 * \brief Metodo que imprime el array.
-	 * \param values
+	 * \param values - Array de enteros.
 	 */
 	public void print(int[] values) {
 		for (int i = 0; i < values.length; i++) {
