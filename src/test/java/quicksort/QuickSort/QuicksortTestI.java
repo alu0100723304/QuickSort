@@ -2,7 +2,7 @@ package quicksort.QuickSort;
 
 import junit.framework.TestCase;
 
-public class QuicksortTest02 extends TestCase {
+public class QuicksortTestI extends TestCase{
 	Quicksort Q = new Quicksort();
 	int[] v = new int[10];
 	int[] vr = new int[10];
@@ -19,20 +19,19 @@ public class QuicksortTest02 extends TestCase {
 		v[8] = 8;
 		v[9] = 0;
 		
-		vr[0] = 7;
-		vr[1] = 6;
-		vr[2] = 1;
-		vr[3] = 2;
-		vr[4] = 9;
-		vr[5] = 4;
-		vr[6] = 5;
-		vr[7] = 3;
-		vr[8] = 0;
-		vr[9] = 8;
+		vr[0] = 0;
+		vr[1] = 1;
+		vr[2] = 2;
+		vr[3] = 3;
+		vr[4] = 4;
+		vr[5] = 5;
+		vr[6] = 6;
+		vr[7] = 7;
+		vr[8] = 8;
+		vr[9] = 9;
 		
-		Q.sort(v);		
-		for (int i = 0; i < v.length; i++){
-			assertNotSame(vr[i], v[i]);
-		}
+		Q.sort(v);
+		for (int i = 0; i < v.length; i++)
+			assertEquals(vr[i], v[i]);
 	}
 }

@@ -9,8 +9,8 @@ public class AllTests extends TestCase {
 		TestSuite suite = new TestSuite(AllTests.class.getName());
 		//$JUnit-BEGIN$
 		suite.addTest(AppTest.suite());
-		suite.addTestSuite(QuicksortTest01.class);
-		suite.addTestSuite(QuicksortTest02.class);
+		suite.addTestSuite(QuicksortTestI.class);
+		suite.addTestSuite(QuicksortTestII.class);
 		//$JUnit-END$
 		return suite;
 	}
