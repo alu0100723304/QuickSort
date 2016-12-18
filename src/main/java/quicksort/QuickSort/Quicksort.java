@@ -1,5 +1,9 @@
 package quicksort.QuickSort;
 
+/**
+ * \class Clase QuickSort
+ * \author Joel Perez Ramos
+ */
 public class Quicksort {
 	/**
 	 * \brief atributos privados
