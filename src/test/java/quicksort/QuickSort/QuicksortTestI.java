@@ -1,11 +1,30 @@
 package quicksort.QuickSort;
 
+import junit.framework.Test;
 import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
 public class QuicksortTestI extends TestCase{
 	Quicksort Q = new Quicksort();
 	int[] v = new int[10];
 	int[] vr = new int[10];
+	
+	/**
+	 * Create the test case
+	 *
+	 * @param testName
+	 *            name of the test case
+	 */
+	public QuicksortTestI(String testName) {
+		super(testName);
+	}
+
+	/**
+	 * @return the suite of tests being tested
+	 */
+	public static Test suite() {
+		return new TestSuite(AppTest.class);
+	}
 	
 	public void testSort() {
 		v[0] = 7;
